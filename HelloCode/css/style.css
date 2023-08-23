@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #173e92;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.control-panel {
+    background: rgb(165, 165, 165);
+    text-align: right;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+.control-panel select{
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.languages {
+    background: white;
+    border: 1px solid gray;
+}
+
+
+#editor { height: 340px; }
+
+/*.button-container {
+    text-align: right;
+    padding: 4px;
+}*/
+
+.btn {
+    background: #e92121;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 0;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-right: 20px;
+    width: 70px;
+}
+
+.btn:hover{
+    background: #9c1717;
+}
+.btn2{
+    background: #2561e4;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 0;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100px;
+}
+.btn2:hover{
+    background: #173e92;
+}
+.output-container{
+    width: 100%;
+    min-height: 150px;
+}
+.result{
+    width: 60%;
+    float: left;
+    position: relative;
+}
+.run-command{
+    width: 39%;
+    float: right;
+}
+.output-container .result p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 6px;
+}
+.output {
+    margin: 6px;
+    padding: 4px;
+    border: 2px solid gray;
+    min-height: 150px;
+    resize: none;
+    white-space: pre-wrap;
+
+}
+.run-command p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 6px;
+}
+.command-container{
+    margin: 0px;
+    padding: 4px;
+    border: 2px solid gray;
+    min-height: 150px;
+    height: inherit;
+    resize: none;
+    text-align: center;
+}
+.command-container input{
+    padding: 4px;
+    border-radius: 8px;
+    width: 150px;
+    margin: 10px;
+    margin-right: 20px;
+}
+.btn3{
+    background: #2561e4;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 0;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 20px;
+    width: 70px;
+}
+.btn3:hover{
+    background: #173e92;
+}
+#inputs{
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
+}

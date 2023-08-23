@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HelloCode IDE</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <div class="header">HelloCode IDE </div>
+    <div class="control-panel">
+        Select Theme:
+        &nbsp;
+        <select class="theme" id="theme" onchange="changeTheme()">
+            <option value="monokai">Monokai</option>
+            <option value="kuroir">Kuroir Light</option>
+            <option value="solarized_dark">Solarized Dark</option>
+            <option value="twilight">Twilight</option>
+        </select>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        Select Language:
+        &nbsp;
+        <select id="languages" class="languages" onchange="changeLanguage()">
+            <option value="c"> C </option>
+            <option value="cpp"> C++ </option>
+            <option value="php"> PHP </option>
+            <option value="python"> Python </option>
+            <option value="node"> Node JS </option>
+            <option value="java"> Java </option>
+        </select>
+        <button class="btn" onclick="executeCode()"> Run </button>
+        <button class="btn2" onclick="downloadFile()"> Download </button>
+    </div>
+    <div class="editor" id="editor"></div>
+
+
+
+    <div class="output-container" id="output-container">
+        <div class="result">
+            <p>Output</p>
+            <pre class="output"></pre>
+        </div>
+        <div class="run-command">
+            <p>Install Packages/Provide Input</p>
+            <div class="command-container">
+                <input type="text" class="input-command" id="input-command">
+                <button class="btn3" onclick="executeCode2()">Run CMD</button>
+                <div class="input-field">
+                    <textarea name="inputs" id="inputs" cols="35" rows="5"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-kuroir.js"></script>
+    <script src="js/lib/theme-solarized_dark.js"></script>
+    <script src="js/lib/theme-monokai.js"></script>
+    <script src="js/lib/theme-twilight.js"></script>
+    <script src="js/ide.js"></script>
+
+</body>
+</html>
